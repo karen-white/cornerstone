@@ -166,7 +166,7 @@ export default class ProductDetails {
                 view.attr('data-product-variant', productVariant);
             } else {
                 const productName = view.find('.productView-title')[0].innerText;
-                const card = $(`[data-name="${productName}"]`);
+                const card = $(`[data-name='${productName}']`);
                 card.attr('data-product-variant', productVariant);
             }
         }
